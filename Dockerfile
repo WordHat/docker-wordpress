@@ -1,4 +1,5 @@
-# docker build . --build-arg WORDPRESS_VERSION=5.0.3 --build-arg PHP_VERSION=7.3
+# docker build --build-arg WORDPRESS_VERSION=5.1 --build-arg PHP_VERSION=7.3 -t "wordhat/wordhat:wp-5.1-php-7.3" .
+# docker push wordhat/wordhat:wp-5.1-php-7.3
 ARG WORDPRESS_VERSION
 ARG PHP_VERSION
 
