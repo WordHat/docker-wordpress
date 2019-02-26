@@ -13,3 +13,6 @@ RUN curl -o /usr/local/bin/wp -SL https://raw.githubusercontent.com/wp-cli/build
 # WordHat requires mysqldump.
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends mysql-client
+
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT [ "/entrypoint.sh" ]
