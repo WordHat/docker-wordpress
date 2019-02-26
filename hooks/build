@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build --build-arg WORDPRESS_VERSION=$WORDPRESS_VERSION --build-arg PHP_VERSION=$PHP_VERSION .
+docker build --build-arg WORDPRESS_VERSION=$WORDPRESS_VERSION --build-arg PHP_VERSION=$PHP_VERSION -t $IMAGE_NAME .
