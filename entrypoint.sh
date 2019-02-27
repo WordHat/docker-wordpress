@@ -20,4 +20,7 @@ fi
 
 chown -R www-data:www-data /var/www/html/wp-content/{uploads,upgrade,languages}
 
+# WordPress image
+bash /usr/local/bin/docker-entrypoint.sh apache2-foreground
+
 exec "$@"
